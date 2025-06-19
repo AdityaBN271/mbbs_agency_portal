@@ -9,7 +9,8 @@ models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 origins = [
-    "http://localhost:5173",  # React frontend dev server
+    "https://mbbs-frontend.onrender.com",
+      "http://localhost:5173"  # React frontend dev server
 ]
 
 app.add_middleware(
